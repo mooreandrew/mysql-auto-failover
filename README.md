@@ -28,7 +28,6 @@ Connect to the Controller and check that the nodes are clustered:
 
 ```
 vagrant ssh controller
-sudo bash
 cat log.txt
 ```
 
@@ -104,7 +103,6 @@ This will stop the mysql service on the master, if you exit this and connect to 
 
 ```
 vagrant ssh controller
-sudo bash
 cat log.txt
 ```
 
