@@ -4,9 +4,6 @@
 Vagrant.configure(2) do | global |
 #  global.vm.box = "landregistry/centos"
   global.vm.box = "landregistry/centos"
-  if Vagrant.has_plugin?("vagrant-cachier")
-    global.cache.scope = :box
-  end
 
   global.vm.provision "shell", inline: "sed -i -e 's,keepcache=0,keepcache=1,g' /etc/yum.conf"
   #Reenable the line below if the .yum folder is empty
